@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		C7C6150E2312BB0E001EB92E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6150D2312BB0E001EB92E /* AppDelegate.swift */; };
-		C7C615102312BB0E001EB92E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6150F2312BB0E001EB92E /* ViewController.swift */; };
 		C7C615132312BB0E001EB92E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C615112312BB0E001EB92E /* Main.storyboard */; };
 		C7C615152312BB10001EB92E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C615142312BB10001EB92E /* Assets.xcassets */; };
 		C7C615182312BB10001EB92E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C615162312BB10001EB92E /* LaunchScreen.storyboard */; };
+		C7C6152223130C24001EB92E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6152123130C24001EB92E /* LoginViewController.swift */; };
+		C7C6152423130C41001EB92E /* LoginConfigerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6152323130C41001EB92E /* LoginConfigerator.swift */; };
+		C7C6152623130C5C001EB92E /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6152523130C5C001EB92E /* LoginPresenter.swift */; };
+		C7C6152A23130C92001EB92E /* AutharizationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6152923130C92001EB92E /* AutharizationRouter.swift */; };
+		C7C6152C23130CA6001EB92E /* AutharizationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6152B23130CA6001EB92E /* AutharizationRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C7C6150A2312BB0E001EB92E /* Harmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C6150D2312BB0E001EB92E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C7C6150F2312BB0E001EB92E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7C615122312BB0E001EB92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7C615142312BB10001EB92E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7C615172312BB10001EB92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7C615192312BB10001EB92E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7C6152123130C24001EB92E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		C7C6152323130C41001EB92E /* LoginConfigerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigerator.swift; sourceTree = "<group>"; };
+		C7C6152523130C5C001EB92E /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		C7C6152923130C92001EB92E /* AutharizationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutharizationRouter.swift; sourceTree = "<group>"; };
+		C7C6152B23130CA6001EB92E /* AutharizationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutharizationRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		C7C6150C2312BB0E001EB92E /* Harmony */ = {
 			isa = PBXGroup;
 			children = (
+				C7C6152723130C6B001EB92E /* Network */,
+				C7C6151F23130BA0001EB92E /* Scenes */,
 				C7C6150D2312BB0E001EB92E /* AppDelegate.swift */,
-				C7C6150F2312BB0E001EB92E /* ViewController.swift */,
 				C7C615112312BB0E001EB92E /* Main.storyboard */,
 				C7C615142312BB10001EB92E /* Assets.xcassets */,
 				C7C615162312BB10001EB92E /* LaunchScreen.storyboard */,
 				C7C615192312BB10001EB92E /* Info.plist */,
 			);
 			path = Harmony;
+			sourceTree = "<group>";
+		};
+		C7C6151F23130BA0001EB92E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C7C6152023130C08001EB92E /* Login */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C7C6152023130C08001EB92E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C7C6152123130C24001EB92E /* LoginViewController.swift */,
+				C7C6152323130C41001EB92E /* LoginConfigerator.swift */,
+				C7C6152523130C5C001EB92E /* LoginPresenter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		C7C6152723130C6B001EB92E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C7C6152823130C74001EB92E /* Autharization */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C7C6152823130C74001EB92E /* Autharization */ = {
+			isa = PBXGroup;
+			children = (
+				C7C6152923130C92001EB92E /* AutharizationRouter.swift */,
+				C7C6152B23130CA6001EB92E /* AutharizationRequest.swift */,
+			);
+			path = Autharization;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7C615102312BB0E001EB92E /* ViewController.swift in Sources */,
+				C7C6152223130C24001EB92E /* LoginViewController.swift in Sources */,
+				C7C6152423130C41001EB92E /* LoginConfigerator.swift in Sources */,
+				C7C6152C23130CA6001EB92E /* AutharizationRequest.swift in Sources */,
 				C7C6150E2312BB0E001EB92E /* AppDelegate.swift in Sources */,
+				C7C6152A23130C92001EB92E /* AutharizationRouter.swift in Sources */,
+				C7C6152623130C5C001EB92E /* LoginPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
