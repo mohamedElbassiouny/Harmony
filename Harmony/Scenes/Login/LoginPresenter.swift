@@ -11,3 +11,17 @@ protocol LoginPresenter {
     func Validate()
     func signIn()
 }
+
+class loginPresenterImplmentation: LoginPresenter {
+    private var view: LoginView
+    init(view: LoginView) {
+        self.view = view
+    }
+    func Validate() {
+        <#code#>
+    }
+    
+    func signIn() {
+        <#code#>
+    }
+}

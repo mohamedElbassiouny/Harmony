@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EDC57AE20FD01EBF2DCD437 /* Pods_Harmony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D357449C4F569C57EC3396 /* Pods_Harmony.framework */; };
+		C7B8825B2313EBDC00B4BE83 /* AppLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8825A2313EBDC00B4BE83 /* AppLinks.swift */; };
 		C7C6150E2312BB0E001EB92E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6150D2312BB0E001EB92E /* AppDelegate.swift */; };
 		C7C615132312BB0E001EB92E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C615112312BB0E001EB92E /* Main.storyboard */; };
 		C7C615152312BB10001EB92E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C615142312BB10001EB92E /* Assets.xcassets */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		07D357449C4F569C57EC3396 /* Pods_Harmony.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Harmony.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A9932BCBCAEDC93A98AA760 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
+		A9CF3DD0B9129908685652DE /* Pods-Harmony.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.release.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.release.xcconfig"; sourceTree = "<group>"; };
+		C7B8825A2313EBDC00B4BE83 /* AppLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLinks.swift; sourceTree = "<group>"; };
 		C7C6150A2312BB0E001EB92E /* Harmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C6150D2312BB0E001EB92E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7C615122312BB0E001EB92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,17 +43,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EDC57AE20FD01EBF2DCD437 /* Pods_Harmony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ED29E6955A0B9D9F3A53087 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2A9932BCBCAEDC93A98AA760 /* Pods-Harmony.debug.xcconfig */,
+				A9CF3DD0B9129908685652DE /* Pods-Harmony.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C7C615012312BB0E001EB92E = {
 			isa = PBXGroup;
 			children = (
 				C7C6150C2312BB0E001EB92E /* Harmony */,
 				C7C6150B2312BB0E001EB92E /* Products */,
+				3ED29E6955A0B9D9F3A53087 /* Pods */,
+				D296019B2D4B7097B39B9D88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				C7C6152823130C74001EB92E /* Autharization */,
+				C7B8825A2313EBDC00B4BE83 /* AppLinks.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -108,6 +127,14 @@
 			path = Autharization;
 			sourceTree = "<group>";
 		};
+		D296019B2D4B7097B39B9D88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07D357449C4F569C57EC3396 /* Pods_Harmony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -115,9 +142,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7C6151C2312BB10001EB92E /* Build configuration list for PBXNativeTarget "Harmony" */;
 			buildPhases = (
+				717E959763AFFAD453AA6284 /* [CP] Check Pods Manifest.lock */,
 				C7C615062312BB0E001EB92E /* Sources */,
 				C7C615072312BB0E001EB92E /* Frameworks */,
 				C7C615082312BB0E001EB92E /* Resources */,
+				CE2B916CEEAF3C2D0563DBE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,6 +203,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		717E959763AFFAD453AA6284 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Harmony-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE2B916CEEAF3C2D0563DBE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harmony/Pods-Harmony-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Harmony/Pods-Harmony-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Harmony/Pods-Harmony-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7C615062312BB0E001EB92E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -185,6 +256,7 @@
 				C7C6150E2312BB0E001EB92E /* AppDelegate.swift in Sources */,
 				C7C6152A23130C92001EB92E /* AutharizationRouter.swift in Sources */,
 				C7C6152623130C5C001EB92E /* LoginPresenter.swift in Sources */,
+				C7B8825B2313EBDC00B4BE83 /* AppLinks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +400,7 @@
 		};
 		C7C6151D2312BB10001EB92E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A9932BCBCAEDC93A98AA760 /* Pods-Harmony.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -346,6 +419,7 @@
 		};
 		C7C6151E2312BB10001EB92E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9CF3DD0B9129908685652DE /* Pods-Harmony.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
