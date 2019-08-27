@@ -18,10 +18,11 @@ class loginPresenterImplmentation: LoginPresenter {
         self.view = view
     }
     func Validate() {
-        <#code#>
+        print("dfdf")
     }
     
     func signIn() {
-        <#code#>
+        print("dfdf")
+
     }
 }

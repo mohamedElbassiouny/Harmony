@@ -43,14 +43,14 @@ enum AutharizationRouter: URLRequestConvertible {
             
         }()
         
-        let headers : HTTPHeaders? = {
-            let authHeaders : [String:String]?
-            switch self {
-            case .login:
-                authHeaders =  nil
-            }
-            return authHeaders
-        }()
+//        let headers : HTTPHeaders? = {
+//            let authHeaders : [String:String]?
+//            switch self {
+//            case .login:
+//                authHeaders =  nil
+//            }
+//         //   return authHeaders
+//        }()
         
         var urlRequest = URLRequest(url: url)
         
