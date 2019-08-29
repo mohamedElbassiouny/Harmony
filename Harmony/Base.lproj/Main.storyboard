@@ -118,7 +118,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crv-vU-HEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3623" y="-1"/>
+            <point key="canvasLocation" x="3636" y="21"/>
         </scene>
         <!--Nearby View Controller-->
         <scene sceneID="KRy-Je-GjR">
@@ -139,17 +139,36 @@
         <!--Discover View Controller-->
         <scene sceneID="b1f-gX-Sev">
             <objects>
-                <viewController id="ekW-dO-sMN" userLabel="Discover View Controller" sceneMemberID="viewController">
+                <viewController id="ekW-dO-sMN" userLabel="Discover View Controller" customClass="DiscoverViewController" customModule="Harmony" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ysg-Ll-kTV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wqM-bh-2gn">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="ekW-dO-sMN" id="xG4-1D-BgO"/>
+                                    <outlet property="delegate" destination="ekW-dO-sMN" id="IJb-cU-1xp"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wqM-bh-2gn" firstAttribute="leading" secondItem="y21-SJ-pAm" secondAttribute="leading" id="Dka-yD-DXl"/>
+                            <constraint firstItem="wqM-bh-2gn" firstAttribute="top" secondItem="y21-SJ-pAm" secondAttribute="top" id="M5n-2f-FbE"/>
+                            <constraint firstItem="y21-SJ-pAm" firstAttribute="trailing" secondItem="wqM-bh-2gn" secondAttribute="trailing" id="S0m-dA-LAa"/>
+                            <constraint firstItem="y21-SJ-pAm" firstAttribute="bottom" secondItem="wqM-bh-2gn" secondAttribute="bottom" id="qUV-UC-TSF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="y21-SJ-pAm"/>
                     </view>
                     <navigationItem key="navigationItem" title="Discover" id="2dw-kn-TcY">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="Group 4" id="daB-VH-pJ8"/>
                         <barButtonItem key="rightBarButtonItem" title="Item" image="ui-16px-3_funnel-40" id="Ipx-V7-aXL"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="discoverTableView" destination="wqM-bh-2gn" id="x9H-Gv-X7E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1B4-j2-PV3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

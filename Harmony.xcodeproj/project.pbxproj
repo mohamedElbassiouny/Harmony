@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		7EDC57AE20FD01EBF2DCD437 /* Pods_Harmony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D357449C4F569C57EC3396 /* Pods_Harmony.framework */; };
 		C7B8825B2313EBDC00B4BE83 /* AppLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8825A2313EBDC00B4BE83 /* AppLinks.swift */; };
+		C7B882622315D40500B4BE83 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B882612315D40500B4BE83 /* DiscoverViewController.swift */; };
+		C7B882642315D42A00B4BE83 /* DiscoverPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B882632315D42A00B4BE83 /* DiscoverPresenter.swift */; };
+		C7B882662315D44100B4BE83 /* DiscoverConfigerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B882652315D44100B4BE83 /* DiscoverConfigerator.swift */; };
+		C7B8826A23176F6200B4BE83 /* DiscoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B8826823176F6200B4BE83 /* DiscoverTableViewCell.swift */; };
+		C7B8826B23176F6200B4BE83 /* DiscoverTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7B8826923176F6200B4BE83 /* DiscoverTableViewCell.xib */; };
 		C7C6150E2312BB0E001EB92E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C6150D2312BB0E001EB92E /* AppDelegate.swift */; };
 		C7C615132312BB0E001EB92E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7C615112312BB0E001EB92E /* Main.storyboard */; };
 		C7C615152312BB10001EB92E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7C615142312BB10001EB92E /* Assets.xcassets */; };
@@ -25,6 +30,11 @@
 		2A9932BCBCAEDC93A98AA760 /* Pods-Harmony.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.debug.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.debug.xcconfig"; sourceTree = "<group>"; };
 		A9CF3DD0B9129908685652DE /* Pods-Harmony.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Harmony.release.xcconfig"; path = "Target Support Files/Pods-Harmony/Pods-Harmony.release.xcconfig"; sourceTree = "<group>"; };
 		C7B8825A2313EBDC00B4BE83 /* AppLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLinks.swift; sourceTree = "<group>"; };
+		C7B882612315D40500B4BE83 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		C7B882632315D42A00B4BE83 /* DiscoverPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPresenter.swift; sourceTree = "<group>"; };
+		C7B882652315D44100B4BE83 /* DiscoverConfigerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverConfigerator.swift; sourceTree = "<group>"; };
+		C7B8826823176F6200B4BE83 /* DiscoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverTableViewCell.swift; sourceTree = "<group>"; };
+		C7B8826923176F6200B4BE83 /* DiscoverTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverTableViewCell.xib; sourceTree = "<group>"; };
 		C7C6150A2312BB0E001EB92E /* Harmony.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Harmony.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7C6150D2312BB0E001EB92E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7C615122312BB0E001EB92E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +67,26 @@
 				A9CF3DD0B9129908685652DE /* Pods-Harmony.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		C7B882602315D3AF00B4BE83 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				C7B8826723176F2600B4BE83 /* New Group */,
+				C7B882612315D40500B4BE83 /* DiscoverViewController.swift */,
+				C7B882632315D42A00B4BE83 /* DiscoverPresenter.swift */,
+				C7B882652315D44100B4BE83 /* DiscoverConfigerator.swift */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		C7B8826723176F2600B4BE83 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				C7B8826823176F6200B4BE83 /* DiscoverTableViewCell.swift */,
+				C7B8826923176F6200B4BE83 /* DiscoverTableViewCell.xib */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		C7C615012312BB0E001EB92E = {
@@ -94,6 +124,7 @@
 		C7C6151F23130BA0001EB92E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C7B882602315D3AF00B4BE83 /* Discover */,
 				C7C6152023130C08001EB92E /* Login */,
 			);
 			path = Scenes;
@@ -195,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7B8826B23176F6200B4BE83 /* DiscoverTableViewCell.xib in Resources */,
 				C7C615182312BB10001EB92E /* LaunchScreen.storyboard in Resources */,
 				C7C615152312BB10001EB92E /* Assets.xcassets in Resources */,
 				C7C615132312BB0E001EB92E /* Main.storyboard in Resources */,
@@ -251,10 +283,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7C6152223130C24001EB92E /* LoginViewController.swift in Sources */,
+				C7B882662315D44100B4BE83 /* DiscoverConfigerator.swift in Sources */,
 				C7C6152423130C41001EB92E /* LoginConfigerator.swift in Sources */,
+				C7B882642315D42A00B4BE83 /* DiscoverPresenter.swift in Sources */,
 				C7C6152C23130CA6001EB92E /* AutharizationRequest.swift in Sources */,
 				C7C6150E2312BB0E001EB92E /* AppDelegate.swift in Sources */,
 				C7C6152A23130C92001EB92E /* AutharizationRouter.swift in Sources */,
+				C7B8826A23176F6200B4BE83 /* DiscoverTableViewCell.swift in Sources */,
+				C7B882622315D40500B4BE83 /* DiscoverViewController.swift in Sources */,
 				C7C6152623130C5C001EB92E /* LoginPresenter.swift in Sources */,
 				C7B8825B2313EBDC00B4BE83 /* AppLinks.swift in Sources */,
 			);
