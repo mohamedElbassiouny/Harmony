@@ -7,6 +7,6 @@
 //
 
 import Foundation
-protocol DiscoverConfigerator {
-    <#requirements#>
-}
+//protocol DiscoverConfigerator {
+//    
+//}

@@ -127,10 +127,37 @@
                     <view key="view" contentMode="scaleToFill" id="lC9-om-JwT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7 spots around you" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kjB-9c-N4i">
+                                <rect key="frame" x="2" y="90" width="410" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="jablonowo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0LC-nB-zu9">
+                                <rect key="frame" x="2" y="110" width="410" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kjB-9c-N4i" firstAttribute="top" secondItem="7fk-c4-IzT" secondAttribute="top" constant="2" id="5DI-4l-PAW"/>
+                            <constraint firstItem="7fk-c4-IzT" firstAttribute="trailing" secondItem="0LC-nB-zu9" secondAttribute="trailing" constant="2" id="5mF-vj-p9d"/>
+                            <constraint firstItem="0LC-nB-zu9" firstAttribute="centerX" secondItem="lC9-om-JwT" secondAttribute="centerX" id="6HY-zc-QKH"/>
+                            <constraint firstItem="7fk-c4-IzT" firstAttribute="trailing" secondItem="kjB-9c-N4i" secondAttribute="trailing" constant="2" id="ZLk-ap-o7w"/>
+                            <constraint firstItem="kjB-9c-N4i" firstAttribute="leading" secondItem="7fk-c4-IzT" secondAttribute="leading" constant="2" id="h0Y-PO-uZB"/>
+                            <constraint firstItem="0LC-nB-zu9" firstAttribute="top" secondItem="kjB-9c-N4i" secondAttribute="bottom" constant="2" id="qb6-6S-cIK"/>
+                            <constraint firstItem="0LC-nB-zu9" firstAttribute="leading" secondItem="7fk-c4-IzT" secondAttribute="leading" constant="2" id="rzS-lE-tha"/>
+                            <constraint firstItem="kjB-9c-N4i" firstAttribute="centerX" secondItem="lC9-om-JwT" secondAttribute="centerX" id="w8o-NI-xTT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7fk-c4-IzT"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Nearby " id="WkH-vI-dDs"/>
+                    <navigationItem key="navigationItem" title="Nearby " id="WkH-vI-dDs">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="Group 4" id="TNb-6z-scW"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ui-16px-3_funnel-40" id="PeM-gy-5Ay"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WlN-8C-n5f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -144,7 +171,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wqM-bh-2gn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="250" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wqM-bh-2gn">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>

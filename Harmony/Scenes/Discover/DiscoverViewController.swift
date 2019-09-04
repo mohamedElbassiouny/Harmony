@@ -13,7 +13,9 @@ class DiscoverViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        discoverTableView.register(UINib(nibName: "DiscoveryTableViewCell", bundle: nil), forCellReuseIdentifier: "DiscoveryCell")
+        discoverTableView.separatorColor = UIColor.clear
+        
         // Do any additional setup after loading the view.
     }
 
@@ -26,6 +28,7 @@ extension DiscoverViewController:UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(withIdentifier: "DiscoveryCell") as! DiscoveryTableViewCell
+        return cell
     }
 }
