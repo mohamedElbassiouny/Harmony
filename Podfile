@@ -7,6 +7,7 @@ target 'Harmony' do
 
   # Pods for Harmony
   pod 'Alamofire', '~> 5.0.0-beta.5'
+   pod 'FloatRatingView', '~> 4'
 
 
 end
